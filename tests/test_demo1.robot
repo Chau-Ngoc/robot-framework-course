@@ -23,7 +23,7 @@ Fill in the login form
 
 Click Login button
     Click Button    login
-    Wait Until Page Contains    The password that you've entered is incorrect.
+    Wait For Condition    return document.readyState === 'complete'
 
 Verify error message is correct
     Page Should Contain    The password that you've entered is incorrect.
